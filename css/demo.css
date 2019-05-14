@@ -1,0 +1,46 @@
+html,body,div,h3{
+    padding:0;
+    margin:0;
+}
+html,body{
+    height:100%;
+}
+#wrapper{
+    width:500px;
+    margin:0 auto;
+    height:100%;
+    background-image:url("../images/bg.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:15px;
+    box-sizing:border-box;
+    position:relative;
+}
+#wrapper h3{
+    line-height:40px;
+    color:#fff;
+    font-weight:normal;
+    text-align:center;
+    font-size:18px;
+    user-select:none;
+}
+#wrapper #score{
+    opacity:0;
+}
+#wrapper .blink{
+    animation: current 0.5s linear infinite;
+}
+@keyframes current{
+    0%{
+        transform:scale(0.95);
+        border:3px solid #abcdef;
+    }
+    50%{
+        transform:scale(0.85);
+        border:3px solid #abcdef;
+    }
+    100%{
+        transform:scale(0.95);
+        border:3px solid #abcdef;
+    }
+}
